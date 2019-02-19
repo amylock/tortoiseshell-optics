@@ -1,0 +1,267 @@
+/* universal styles */
+
+html {
+  font-size: 18px;
+  font-family: Helvetica;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.container {
+  width: 960px;
+  margin: auto;
+}
+
+/* header */
+header {
+  background-image: url(../images/glasses-bg.png);
+  height: 30rem;
+  background-size: cover;
+  padding-top: 1rem;
+}
+
+.nav-bar {
+  display: flex;
+  background-color: cadetblue;
+  margin: 1rem auto 10rem auto;
+  padding: 1rem 0 1rem 0;
+  justify-content: space-between;
+  color: white;
+}
+
+.logo, .desktop-menu {
+  display: inline-flex;
+  align-items: center;
+}
+
+.nav-bar img {
+  height: 1.5rem;
+  width: auto;
+  margin-right: 1rem;
+  padding-left: 2rem;
+}
+
+.mobile-menu {
+  display: none;
+}
+.desktop-menu a {
+    padding-right: 2rem;
+}
+
+.container-tagline {
+    display: flex;
+  justify-content: flex-end;
+}
+
+.tagline {
+  background-color: white;
+  padding: 1.5rem 5rem;
+  margin-right: -2rem;
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+/* icons */
+.icons {
+    display: flex;
+    justify-content: center;
+}
+
+.icon {
+  display: flex;
+  flex-direction: column;
+  height: 8rem;
+  width: 5rem;
+  margin: 3rem;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.icon-paper {
+  width: 3.5rem;
+  height: auto;
+}
+
+.icon-ruler,
+.icon-truck {
+  width: 5rem;
+}
+/* info */
+
+.info {
+    display: flex;
+    justify-content: center;
+}
+
+.info-item {
+    margin-bottom: 5rem;
+    width: 35%;
+    margin-right: 5%;
+
+}
+
+.info-title {
+  background-color: cadetblue;
+  padding: .5rem 1.25rem;
+  width: 10rem;
+  margin-bottom: 1rem;
+  color: white;
+  text-transform: uppercase;
+}
+
+/* footer */
+footer {
+  display: flex;
+  align-content: center;
+  padding: 4rem;
+  background-color: azure;
+}
+
+.logo {
+  height: 1.5rem;
+  width: auto;
+  margin-right: 1rem;
+}
+
+@media only screen and (max-width: 1060px) {
+  /* univerasl styles */
+  .container {
+    width: 100%;
+  }
+
+  /* header */
+  header {
+    height: 22rem;
+    padding-top: 0;
+    background-position: center;
+  }
+
+  .nav-bar {
+    margin: 0 0 5rem 0;
+  }
+
+  .desktop-menu {
+    margin-right: 2rem;
+  }
+
+  .tagline {
+    font-size: 1.33rem;
+    padding: .75rem 4rem;
+    margin-right: 2rem;
+  }
+
+}
+
+@media only screen and (max-width: 700px) {
+  /* header */
+  header {
+    background-position: 20%;
+    height: 17rem;
+  }
+
+  .logo h1 {
+    display: none;
+  }
+
+  .nav-bar {
+    margin-bottom: 9rem;
+  }
+
+  .desktop-menu {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: inline;
+    padding-right: 2rem;
+  }
+
+  .container-tagline {
+    display: block;
+    width: 100%;
+  }
+
+  .tagline {
+    margin: 0;
+    padding: 1rem;
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  /* icons */
+  .icons {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3.77rem;
+    margin-bottom: 3.77rem;
+  }
+
+  .icon {
+    margin: 0;
+    height: auto;
+  }
+
+  .icon p {
+    margin-top: 1.2rem;
+  }
+
+  .icon + .icon {
+    margin-top: 1.54rem;
+  }
+
+  /* info */
+  .info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .info-item,
+  .info-title {
+    width: 100%;
+    text-align: center;
+  }
+
+  .info-item {
+    margin-bottom: 4rem;
+    margin-right: 0;
+    text-align: left;
+  }
+
+  .info-title {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .info-item p {
+    font-size: .77rem;
+    margin-left: .77rem;
+    margin-right: .77rem;
+  }
+
+
+
+  /* footer */
+  .copyright {
+    display: none;
+  }
+
+  .footer-logo {
+    margin: auto;
+  }
+
+  footer {
+    display: flex;
+    align-content: center;
+    padding-right: 0;
+    padding-left: 0;
+    background-color: azure;
+  }
+
+}
